@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --scroll-Color: #000031;
+    --scroll-Two-Color: #00eaff;
+    --scroll-Three-Color: #008cc5;
+    --scroll-Four-Color: #096eaa;
+    --scroll-Five-Color: #16518d;
+}
+
+body {
+    background-image: linear-gradient(#000031, black);
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    position: absolute;
+    width: 95%;
+    z-index: 20;
+}
+
+header h2.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header ul li a {
+    padding: 6px 15px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+header ul li:hover a,
+header ul li .active {
+    background-color: white;
+    color: var(--scroll-Color);
+}
+
+section.main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section.main img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+h3.Ammar {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    transform: translateY(-170px);
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    z-index: 2;
+    position: fixed;
+}
+
+h3.Ammar span:first-child {
+    color: var(--scroll-Three-Color);
+}
+
+h3.Ammar span:last-child {
+    color: var(--scroll-Two-Color);
+}
+
+#moon {
+    mix-blend-mode: screen;
+    z-index: 0;
+}
+
+#mountains4,
+#mountains7,
+#boat,
+#river,
+.content {
+    z-index: 12;
+}
+
+@media (max-width: 600px) {
+    header ul {
+        display: none;
+    }
+
+    h3.Ammar {
+        display: none;
+    }
+
+    header {
+        max-width: 90%;
+    }
+}
+
+.content {
+    padding: 50px;
+    margin-top: -1px;
+    z-index: 20;
+    background-image: linear-gradient(180deg, var(--scroll-Color) 20%, var(--scroll-Five-Color));
+    position: relative;
+}
+
+.content h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+}
+
+.content p {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: bold;
+}
+
+.content ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 100px 0;
+}
+
+.content ul li {
+    list-style: none;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content ul li:first-child {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 50px;
+}
+.content ul li:first-child a {
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.content ul li:nth-child(2) {
+    color: white;
+    background: linear-gradient(blue,red);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.content ul li:nth-child(3) {
+    font-size: 50px;
+    background-color: white;
+    width: 40px ;
+    height: 20px ;
+}
+.content ul li:nth-child(3) a {
+    color: red;
+}
+.content ul li:nth-child(4) {
+    background: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.content ul li:nth-child(5) {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: white;
+    font-size: 50px;
+}
+.content ul li:nth-child(5) a {
+    color: #008cc5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.content ul li:last-child {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.content ul li a {
+
+}
